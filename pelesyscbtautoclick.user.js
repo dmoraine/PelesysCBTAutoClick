@@ -5,6 +5,7 @@
 // @version      1.0
 // @description  Simulate a left-click on the next button 2s after the end of a slide. The ‘p’ button is used to activate/pause the auto-click
 // @match        https://www.pelesys.com/cbt/typecourses/*
+// @match        https://www.pelesys.com/cbt/specialtycourses/*
 // @author       Didier Moraine
 // @grant        none
 // ==/UserScript==
