@@ -10,7 +10,14 @@ This script is designed to automate the navigation through a CBT course on the P
    - [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
    - [Greasemonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 
-2. After installing the extension, [Click here to install the script](https://github.com/dmoraine/PelesysCBTAutoClick/raw/master/pelesyscbtautoclick.user.js)
+2. For Chrome users only: Enable Developer Mode
+   - Go to Chrome's extensions page (chrome://extensions)
+   - Enable the "Developer mode" switch at the top right corner
+   - Find Tampermonkey in the list and check "Allow access to file URLs"
+   - Restart Chrome for the changes to take effect
+   - For more details, see the [official Tampermonkey documentation](https://www.tampermonkey.net/faq.php?locale=en#Q209)
+
+3. After installing the extension, [Click here to install the script](https://github.com/dmoraine/PelesysCBTAutoClick/raw/master/pelesyscbtautoclick.user.js)
    - A Tampermonkey/Greasemonkey window will open automatically
    - Click on "Install" or "OK" to confirm the installation
 
