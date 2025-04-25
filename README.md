@@ -1,6 +1,8 @@
-# PelesysCBTAutoClick
+# PelesysCBTAutoClick - Auto Click & Text Saver
 
-This script is designed to automate the navigation through a CBT course on the Pelesys website. It simulates a left-click on the "Next" button 2 seconds after the end of each slide. The 'p' key can be used to pause or resume the auto-click functionality.
+This script is designed to automate the navigation through a CBT course on the Pelesys website. It performs two main functions:
+1.  **Auto Click:** Simulates a left-click on the "Next" button 2 seconds after the end of each slide. The 'p' key can be used to pause or resume this functionality.
+2.  **Text Saver:** Captures the audio text displayed on each slide and saves it to your browser's `localStorage`. A new entry is created for each session (based on date and time). Pressing the 't' key opens an interface to view, copy, or delete these saved text sessions.
 
 ## Installation Guide
 
@@ -36,20 +38,30 @@ If the one-click installation doesn't work, you can install the script manually:
 ### Step 3: Verify Installation
 
 1. Go to the Tampermonkey/Greasemonkey dashboard
-2. You should see "Pelesys CBT - Auto Click" listed in your scripts
+2. You should see "Pelesys CBT - Auto Click & Text Saver" listed in your scripts
 3. Make sure the script is enabled (there should be a checkmark or toggle switch next to it)
 
 ## Usage Instructions
 
-1. Navigate to your Pelesys CBT course
-2. You will see an indicator in the top-left corner showing "Auto Click (p): ON"
-3. The script will automatically click the "Next" button 2 seconds after each slide ends
-4. To pause/resume the auto-click functionality:
-   - Press the 'p' key on your keyboard
-   - The indicator will show "Auto Click (p): OFF" when paused
-5. Important notes:
-   - If the auto-click status is not working, click once on the menu bar above the slide to activate it
-   - For interactive slides (where you need to perform actions like clicking on screen elements), the script will wait for you to complete the required interaction before proceeding
+1. Navigate to your Pelesys CBT course.
+2. You will see an indicator in the top-left corner showing "Auto Click (p): ON".
+3. **Auto Clicking:**
+   - The script will automatically click the "Next" button 2 seconds after each slide ends.
+   - To pause/resume the auto-click functionality, press the 'p' key. The indicator will update accordingly ("ON" or "OFF").
+4. **Text Saving & Management:**
+   - As you progress through the slides with auto-click enabled, the script automatically saves the audio text associated with each slide to your browser's `localStorage`.
+   - A new storage entry (session) is created each time you start a new browsing session on the course page.
+   - To manage the saved texts, press the 't' key. This will open a management panel.
+   - Inside the panel:
+     - Use the dropdown menu to select a saved session (sorted by date/time, newest first).
+     - The text area below will display the content of the selected session.
+     - Click "Copier le Texte" to copy the displayed text to your clipboard.
+     - Click "Supprimer Session" to delete the currently selected session from `localStorage` (confirmation required).
+     - Click "Fermer" or press the 't' key again to close the panel.
+5. **Important notes:**
+   - If the auto-click status indicator doesn't appear or seems inactive, click once anywhere on the main content area (like the menu bar above the slide) to ensure the page has focus.
+   - For interactive slides (requiring clicks or other actions), the script waits for you to complete the interaction before the auto-click timer starts.
+   - Saved texts are stored locally in your browser and are not sent anywhere.
 
 ## Troubleshooting
 
